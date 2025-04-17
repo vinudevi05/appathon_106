@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="24dp"
+android:gravity="center"
+    android:id="@+id/main"
+    android:background="@drawable/s1"
+tools:context=".Register">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sign In"
+    android:textSize="32sp"
+    android:textStyle="bold"
+    android:textColor="#1A237E"
+    android:layout_marginBottom="24dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please login to your account"
+        android:textSize="16sp"
+        android:textColor="#607D8B"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Email"
+        android:textColor="#000000"
+        android:inputType="textEmailAddress"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColorHint="#302B2B"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="24dp">
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:paddingEnd="48dp"
+            android:textColor="#000000"
+            android:textColorHint="#1B1A1A"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/ivTogglePassword"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/toogleo"
+        android:contentDescription="Toggle Password"
+        android:clickable="true"
+        android:focusable="true" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="end"
+        android:text="Forgot Password?"
+        android:textColor="#1A237E"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:focusable="true" />
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#1A237E"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+    <Button
+        android:id="@+id/googleBtn"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#1A237E"
+        android:text="google"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+<TextView
+    android:id="@+id/tvRegister"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="New user? Create a new account"
+    android:textColor="#1A237E"
+    android:textSize="14sp"
+    android:textStyle="bold"
+    android:layout_marginTop="8dp"
+    android:clickable="true"
+    android:focusable="true" />
+
+</LinearLayout>
